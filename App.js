@@ -3,21 +3,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text> well come Home page!</Text>
-    </View>
-  );
-}
+import { HomeScreen } from './screens/homeScreen';
+import { SettingsScreen } from './screens/settingScreen';
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text> well come to Settings page!</Text>
-    </View>
-  );
-}
+
+
 
 const Tab = createBottomTabNavigator();
 
